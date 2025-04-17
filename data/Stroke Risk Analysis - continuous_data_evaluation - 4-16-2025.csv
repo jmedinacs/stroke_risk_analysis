@@ -1,0 +1,4 @@
+Column,Feature,Minimum,Q1,Median,Mean,Q3,Maximum,IQR,Lower Bound,Upper Bound,Outlier,N/A Count,N/A Replaced
+c,age,0.08,25.00,45.00,43.23,61,82,36.00,-29.00,115,FALSE,0,0
+m,average glucose level,55.12,77.25,91.89,106.15,114.09,271.74,36.85,21.98,169.3575,TRUE,0,0
+n,bmi,10.30,23.80,28.10,28.86,32.8,97.6,9.00,10.30,46.3,TRUE,201,291
