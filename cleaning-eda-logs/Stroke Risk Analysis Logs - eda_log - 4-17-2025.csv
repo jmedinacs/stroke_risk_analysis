@@ -1,0 +1,22 @@
+ID,Date,Description,Insight,Status,Comment/Next Step
+1,4/17/2025,"Excluded ""other"" category for gender distribution analysis. ","There is only one datapoint that has a gender value of ""other"", this data will be kept in the dataset but excluded in gender specific analysis to avoid noise from just one datapoint in one category.",completed,Proceed with gender vs stroke visualization and analysis.
+2,4/17/2025,Gender vs Stroke Distribution Analysis,"• The female patients (58.60%) outnumber the male patients (41.40%) in this dataset. 
+• The bar chart visualization shows that male patients' risk of having a stroke is 5.11% while the female patients have a 4.71% risk of having a stroke - small difference.",completed,"While gender does not show a large difference in stroke risk, it may contribute to multivariate patterns when combined with other factors."
+3,4/17/2025,Age vs Stroke Distribution Analysis,"* The patient distribution across age categories follows a fairly normal shape, except for the elderly group, which only makes up 3.64% of the dataset.
+* The middle-aged adult group is the largest, representing 30.61% of all patients.
+* The bar chart shows a clear upward trend in stroke risk probability with age - from 0.23% in pediatric patients to a peak of 21.51% in the elderly.
+* The stroke risk among elderly patients is almost double that of seniors (11.85%).
+* Note that the number of elderly patients make up only 3.84% of the data, therefore the smallest movements in occurences of stroke can make significant changes to the risk value.",completed,"* Consider exploring comorbidity and multivariate analysis of age and other features. 
+* If creating a model, consider random sampling, SMOTE, and/or balancing of data to improve predictive accuracy."
+4,4/17/2025,Hypertension vs Stroke Distribution Analysis,"* Nearly 1 in 10 patients have been diagnosed with hypertension, this represents a heavily imbalanced data distribution.
+* The risk of having a stroke for patients with hypertension is 13.25%, which is nearly four times as much as patients without hypertension (3.97%).",completed,"* The 13.25% risk of having a stroke is one of the highest risk percentage we have encountered.
+* Future study should strive to include more patients with hypertension to further determine its interaction with otehr features."
+5,4/17/2025,Heart Disease vs Stroke Distribution Analysis,"* Only 5.4% of the data represents patients with heart disease.
+* Patients with heart disease posts a risk of 17.03% of having a stroke - this is the highest risk percentage that we have observed so far. 
+* Patients with heart disease is a little more than four times as likely to have a stroke than patients with no heart disease (4.18%)",completed,"* Explore this feature's interaction with other variables. 
+* Consider including more data of patients with heart disease.
+* Severely imbalanced data that needs further work to be viable in building a model."
+6,4/17/2025,Ever Married vs Stroke Distribution,"* Married and once married patients make up 65.6% of the data, which is almost under twice as much as the never married patients (34.4%)
+* Married and once married patients have a 6.56% likelyhood of having a stroke while only patients that were never married only have a 1.65% risk of having a stroke - around four times less likely to have a stroke.",completed,"* Married patients that had a stroke make up 4.3% of the entire dataset. 
+* Explore statistical significance to stroke and multivaraite analysis to get more insight about the role of marriage in risks of having a stroke.
+* Imbalanced class requires further enhancement for modeling."

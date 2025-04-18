@@ -42,13 +42,13 @@ Based on the findings, we propose the following recommendations:
 
 
 
-## Project Files
+## 📎 Project Files
 
-- **Analysis Spreadsheet (Google Sheets)**  
-  [View Published Analysis Sheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vQwkfrpuMIpkoibSBLJGooruVgQHrELuLYzsLgtlXSjV6G8Wzd5ZInqYTd7PAsqzQ43yCu8EWE7Kz08/pubhtml)
+- **📊 Analysis Spreadsheet (Google Sheets)**  
+  [View Live Analysis Sheet (View-Only)](https://docs.google.com/spreadsheets/d/1ctsUU9V53j5OOZTHkQxE0CU2JSFrc1PsuKVmsW1NAZ8/edit?usp=sharing)
 
-- **Data Cleaning & Logs**  
-  [View Cleaning Log & Metadata](https://docs.google.com/spreadsheets/d/e/2PACX-1vR8r4xRczZEetkLAJFeIXWJM33f6oU8Dh2jmayE2OhXzYP9pP1I7xVLmS6m7nZ2gFjT4iwqEO9f2dmW/pubhtml)
+- **🧹 Data Cleaning & Logs**  
+  [View Cleaning Log & Metadata (View-Only)](https://docs.google.com/spreadsheets/d/10xvJDy8NIGSjSsWIwlzbhit-OUnhHeAAujyOldLGtQc/edit?usp=sharing)
 
 
 ## Tools Used
