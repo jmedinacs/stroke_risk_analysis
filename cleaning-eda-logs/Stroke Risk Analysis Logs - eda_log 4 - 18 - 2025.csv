@@ -1,0 +1,37 @@
+ID,Date,Description,Insight,Status,Comment/Next Step
+1,4/17/2025,"Excluded ""other"" category for gender distribution analysis. ","There is only one datapoint that has a gender value of ""other"", this data will be kept in the dataset but excluded in gender specific analysis to avoid noise from just one datapoint in one category.",completed,Proceed with gender vs stroke visualization and analysis.
+2,4/17/2025,Gender vs Stroke Distribution Analysis,"• The female patients (58.60%) outnumber the male patients (41.40%) in this dataset. 
+• The bar chart visualization shows that male patients' risk of having a stroke is 5.11% while the female patients have a 4.71% risk of having a stroke - small difference.",completed,"While gender does not show a large difference in stroke risk, it may contribute to multivariate patterns when combined with other factors."
+3,4/17/2025,Age vs Stroke Distribution Analysis,"* The patient distribution across age categories follows a fairly normal shape, except for the elderly group, which only makes up 3.64% of the dataset.
+* The middle-aged adult group is the largest, representing 30.61% of all patients.
+* The bar chart shows a clear upward trend in stroke risk probability with age - from 0.23% in pediatric patients to a peak of 21.51% in the elderly.
+* The stroke risk among elderly patients is almost double that of seniors (11.85%).
+* Note that the number of elderly patients make up only 3.84% of the data, therefore the smallest movements in occurences of stroke can make significant changes to the risk value.",completed,"* Consider exploring comorbidity and multivariate analysis of age and other features. 
+* If creating a model, consider random sampling, SMOTE, and/or balancing of data to improve predictive accuracy."
+4,4/17/2025,Hypertension vs Stroke Distribution Analysis,"* Nearly 1 in 10 patients have been diagnosed with hypertension, this represents a heavily imbalanced data distribution.
+* The risk of having a stroke for patients with hypertension is 13.25%, which is nearly four times as much as patients without hypertension (3.97%).",completed,"* The 13.25% risk of having a stroke is one of the highest risk percentage we have encountered.
+* Future study should strive to include more patients with hypertension to further determine its interaction with otehr features."
+5,4/17/2025,Heart Disease vs Stroke Distribution Analysis,"* Only 5.4% of the data represents patients with heart disease.
+* Patients with heart disease posts a risk of 17.03% of having a stroke - this is the highest risk percentage that we have observed so far. 
+* Patients with heart disease is a little more than four times as likely to have a stroke than patients with no heart disease (4.18%)",completed,"* Explore this feature's interaction with other variables. 
+* Consider including more data of patients with heart disease.
+* Severely imbalanced data that needs further work to be viable in building a model."
+6,4/17/2025,Ever Married vs Stroke Distribution Analysis,"* Married and once married patients make up 65.6% of the data, which is almost under twice as much as the never married patients (34.4%)
+* Married and once married patients have a 6.56% likelyhood of having a stroke while only patients that were never married only have a 1.65% risk of having a stroke - around four times less likely to have a stroke.",completed,"* Married patients that had a stroke make up 4.3% of the entire dataset. 
+* Explore statistical significance to stroke and multivaraite analysis to get more insight about the role of marriage in risks of having a stroke.
+* Imbalanced class requires further enhancement for modeling."
+7,4/18/2025,Work Type vs Stroke Distribution Analysis,"* 57.24% of the data is composed of patients who work in the private sector.
+* Patients who have never worked make up only 0.43% of the dataset. This subgroup is too small to draw reliable conclusions about stroke risk within that category.
+* Patients who are self-employed have the highest observed stroke rate at 7.94%, but this is only slightly higher than the rates for patients working in government jobs (5.02%) and private companies (5.09%).
+* These small differences suggest that work type may not be a strong standalone predictor of stroke risk. Further analysis is needed to confirm statistical significance.",completed,Conduct statistical significance test to determine if work type is a significant contributor in predicting stroke.
+8,4/17/2025,Residence Type Distribution Analysis,"* The dataset is about evenly distributed (50.8% urban vs 49.2% rural) in terms of residence type.
+* Patients that lives in urban areas have a slightly higher risk of having a stroke at 5.20% while patients that live in rural areas have a 4.53% chance of having a stroke.",completed,Further information about geographic location may yield more diverse and interesting insights about residency type and risk of having a stroke. 
+9,4/18/2025,Glucose Level Distribution Analysis,"* Patients with normal glucose level has the highest composition at 46.52% of the data, while the other three categories are nearly at the same level.
+* The most at risk patients of having a stroke are patients with diabetes (10%) which is just under three times the risk of hypoglycemic (3.58%), normal (3.58%), and prediabetic (3.78%) patients.",completed,"The jump from hypoglycemic, normal, and prediabetic risk up to diabetic risk is quite dramatic. This may indicate a strong association between having diabetes and the risk of having a stroke."
+10,4/18/2025,BMI Category Distribution Analysis,"* The largest BMI group in the dataset is obese patients, comprising 37.57% of the sample. The distribution is left-skewed, with underweight patients making up only 6.59%.
+* Surprisingly, patients in the overweight category have the highest observed stroke rate at 7.14%, while obese patients have a lower stroke rate of 5.10%.
+* This unexpected pattern may suggest underlying confounding factors (e.g., age, physical activity, or metabolic health) not captured by BMI alone. Further data collection and analysis is needed to understand why overweight patients appear to be at higher stroke risk than obese patients in this dataset.",completed,Further study or data gathering is necessary to uncover the reason why people in the overweight category has a higher risk of having a stroke comapred to people in the obese category.
+11,4/18/2025,Smoking Status vs Stroke Distribution Analysis,"* Patients who never smoked make up the largest group in the dataset at 37.03%.
+* A significant portion of the data (30.22%) falls under unknown smoking status. Due to its size, this category should be retained and analyzed carefully, rather than removed.
+* Patients who formerly smoked show the highest stroke risk at 7.91%, while current smokers have a stroke rate of 5.32%.
+* Interestingly, the stroke risk for current smokers (5.32%) is only slightly higher than that of never smokers (4.76%), suggesting that former smoking history may be a more critical risk signal than current smoking alone.",completed,Further data gathering and analysis is necessary to gain more insight about the effects of smoking are on the risk of having a stroke.

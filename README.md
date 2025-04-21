@@ -2,13 +2,41 @@
 
 ## Business Task
 
-The goal of this analysis is to **identify the top three risk factors associated with having a stroke** using the [Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset). This insight is essential for developing targeted prevention strategies and raising awareness for high-risk populations.
+The goal of this project is to **identify the leading predictors of stroke** using historical patient data, so that healthcare leaders can **design targeted awareness campaigns**, **improve preventative health screenings**, and ultimately **reduce the burden of stroke on communities**.
+
+Stroke is a major public health issue that often strikes without warning. However, many of its risk factors—such as hypertension, diabetes, obesity, and smoking—are identifiable through routine screenings and patient history. By analyzing these variables in aggregate, we can uncover which characteristics are most strongly associated with stroke and direct public health efforts toward the highest-impact interventions.
+
+
+### 🔍 Project Scope & Methodology
+
+This analysis uses the [Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset) and proceeds through the following phases:
+
+1. **Exploratory Data Analysis (EDA):**  
+   - Examine stroke prevalence across demographic and health-related variables.
+   - Visualize trends using percentage distributions and bar charts.
+
+2. **Feature Importance & Statistical Testing:**  
+   - Identify the top 3–4 potential predictors of stroke based on observed stroke rates.
+   - Use the **chi-squared test of independence** to determine whether these features are statistically associated with stroke occurrence.
+   - Optionally, test all features and summarize results.
+
+3. **Recommendations:**  
+   - Propose health campaigns and targeted screenings for at-risk populations.
+   - Suggest public health strategies grounded in the data.
+
+4. **Future Work:**  
+   - Explore **compounding effects** of risk factors using multivariate analysis (Three or more features vs Stroke).
+   - While this project focuses on the statistical exploration of **each individual feature's effect** on a patient's risk of stroke, a more comprehensive predictive model could offer deeper insights into how **multiple risk factors compound** to increase the likelihood of a stroke.
+
+---
 
 ## Key Questions
 
 - What demographic or health-related features are most associated with stroke occurrence?
-- Are there combinations of risk factors that appear together?
+- How might the presence of multiple top risk factors simultaneously affect stroke likelihood?
 - How can data-driven insights guide preventative health measures?
+
+---
 
 ## Data Source
 
@@ -27,8 +55,9 @@ This project follows a structured data analysis pipeline:
    - Distribution of stroke vs. non-stroke across demographic and health features  
    - Chi-square tests to assess feature importance for categorical variables  
 3. **Insights and Recommendations**  
-   - Identification of top 3 stroke risk factors  
+   - Identification of top 3–4 stroke risk factors  
    - Practical recommendations for public health stakeholders
+
 
 ## Findings
 
