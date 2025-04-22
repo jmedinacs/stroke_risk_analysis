@@ -1,0 +1,13 @@
+Feature,Description,Type,Comment,Actions/Transformation
+id,Patient's unique identifier,Continuous,No action necessary,None
+gender,Patient's indicated gender,Categorical,"One entry of ""Other""","Standardize to lowercase and decide action for one entry of ""Other"""
+age,Age of the patient,Continuous,Categorize by medical standard,Bin into age groups
+hypertension,Binary hypertension indicator,Categorical,Currently 0/1,Convert to no hypertension and have hypertension
+heart_disease,Binary heart disease indicator,Categorical,Currently 0/1,Convert to no heart disease and have heart disease
+ever_married,Marriage history,Categorical,"""Yes""/""No""",Convert to married and never married
+work_type,Type of work,Categorical,Lowercase  with underscore format,Standardize to lowercase
+residence_type,Residence area,Categorical,Lowercase with underscore format,Standardize to lowercase
+avg_glucose_level,Average blood glucose,Continuous,Not labeled fasting/non-fasting.,Bin into medically accepted categories.
+bmi,Body mass index,Continuous,May have missing / NA values,Address missing/NA values and bin into medically accepted categories.
+smoking_status,Smoking behavior,Categorical,"Includes ""unknown""",Decide how to handle unknown
+stroke,Binary stroke occurrence indicator,Categorical,Currently 0/1,Convert to Had Stroke and No Stroke

@@ -1,0 +1,170 @@
+ID,Date,Description,Insight,Status,Comment/Next Step
+1,4/17/2025,"Excluded ""other"" category for gender distribution analysis. ","There is only one datapoint that has a gender value of ""other"", this data will be kept in the dataset but excluded in gender specific analysis to avoid noise from just one datapoint in one category.",completed,Proceed with gender vs stroke visualization and analysis.
+2,4/17/2025,Gender vs Stroke Distribution Analysis,"• The female patients (58.60%) outnumber the male patients (41.40%) in this dataset. 
+• The bar chart visualization shows that male patients' risk of having a stroke is 5.11% while the female patients have a 4.71% risk of having a stroke - small difference.",completed,"While gender does not show a large difference in stroke risk, it may contribute to multivariate patterns when combined with other factors."
+3,4/17/2025,Age vs Stroke Distribution Analysis,"* The patient distribution across age categories follows a fairly normal shape, except for the elderly group, which only makes up 3.64% of the dataset.
+* The middle-aged adult group is the largest, representing 30.61% of all patients.
+* The bar chart shows a clear upward trend in stroke risk probability with age - from 0.23% in pediatric patients to a peak of 21.51% in the elderly.
+* The stroke risk among elderly patients is almost double that of seniors (11.85%).
+* Note that the number of elderly patients make up only 3.84% of the data, therefore the smallest movements in occurences of stroke can make significant changes to the risk value.",completed,"* Consider exploring comorbidity and multivariate analysis of age and other features. 
+* If creating a model, consider random sampling, SMOTE, and/or balancing of data to improve predictive accuracy."
+4,4/17/2025,Hypertension vs Stroke Distribution Analysis,"* Nearly 1 in 10 patients have been diagnosed with hypertension, this represents a heavily imbalanced data distribution.
+* The risk of having a stroke for patients with hypertension is 13.25%, which is nearly four times as much as patients without hypertension (3.97%).",completed,"* The 13.25% risk of having a stroke is one of the highest risk percentage we have encountered.
+* Future study should strive to include more patients with hypertension to further determine its interaction with other features."
+5,4/17/2025,Heart Disease vs Stroke Distribution Analysis,"* Only 5.4% of the data represents patients with heart disease.
+* Patients with heart disease posts a risk of 17.03% of having a stroke - this is the highest risk percentage that we have observed so far. 
+* Patients with heart disease is a little more than four times as likely to have a stroke than patients with no heart disease (4.18%)",completed,"* Explore this feature interaction with other variables. 
+* Consider including more data of patients with heart disease.
+* Severely imbalanced data that needs further work to be viable in building a model."
+6,4/17/2025,Ever Married vs Stroke Distribution Analysis,"* Married and once married patients make up 65.6% of the data, which is almost under twice as much as the never married patients (34.4%)
+* Married and once married patients have a 6.56% likelihood of having a stroke while only patients that were never married only have a 1.65% risk of having a stroke - around four times less likely to have a stroke.",completed,"* Married patients that had a stroke make up 4.3% of the entire dataset. 
+* Explore statistical significance to stroke and multivariate analysis to get more insight about the role of marriage in risks of having a stroke.
+* Imbalanced class requires further enhancement for modeling."
+7,4/18/2025,Work Type vs Stroke Distribution Analysis,"* 57.24% of the data is composed of patients who work in the private sector.
+* Patients who have never worked make up only 0.43% of the dataset. This subgroup is too small to draw reliable conclusions about stroke risk within that category.
+* Patients who are self-employed have the highest observed stroke rate at 7.94%, but this is only slightly higher than the rates for patients working in government jobs (5.02%) and private companies (5.09%).
+* These small differences suggest that work type may not be a strong standalone predictor of stroke risk. Further analysis is needed to confirm statistical significance.",completed,Conduct statistical significance test to determine if work type is a significant contributor in predicting stroke.
+8,4/17/2025,Residence Type Distribution Analysis,"* The dataset is about evenly distributed (50.8% urban vs 49.2% rural) in terms of residence type.
+* Patients that lives in urban areas have a slightly higher risk of having a stroke at 5.20% while patients that live in rural areas have a 4.53% chance of having a stroke.",completed,Further information about geographic location may yield more diverse and interesting insights about residency type and risk of having a stroke. 
+9,4/18/2025,Glucose Level Distribution Analysis,"* Patients with normal glucose level has the highest composition at 46.52% of the data, while the other three categories are nearly at the same level.
+* The most at risk patients of having a stroke are patients with diabetes (10%) which is just under three times the risk of hypoglycemic (3.58%), normal (3.58%), and prediabetic (3.78%) patients.",completed,"The jump from hypoglycemic, normal, and prediabetic risk up to diabetic risk is quite dramatic. This may indicate a strong association between having diabetes and the risk of having a stroke."
+10,4/18/2025,BMI Category Distribution Analysis,"* The largest BMI group in the dataset is obese patients, comprising 37.57% of the sample. The distribution is left-skewed, with underweight patients making up only 6.59%.
+* Surprisingly, patients in the overweight category have the highest observed stroke rate at 7.14%, while obese patients have a lower stroke rate of 5.10%.
+* This unexpected pattern may suggest underlying confounding factors (e.g., age, physical activity, or metabolic health) not captured by BMI alone. Further data collection and analysis is needed to understand why overweight patients appear to be at higher stroke risk than obese patients in this dataset.",completed,Further study or data gathering is necessary to uncover the reason why people in the overweight category has a higher risk of having a stroke compared to people in the obese category.
+11,4/18/2025,Smoking Status vs Stroke Distribution Analysis,"* Patients who never smoked make up the largest group in the dataset at 37.03%.
+* A significant portion of the data (30.22%) falls under unknown smoking status. Due to its size, this category should be retained and analyzed carefully, rather than removed.
+* Patients who formerly smoked show the highest stroke risk at 7.91%, while current smokers have a stroke rate of 5.32%.
+* Interestingly, the stroke risk for current smokers (5.32%) is only slightly higher than that of never smokers (4.76%), suggesting that former smoking history may be a more critical risk signal than current smoking alone.",completed,Further data gathering and analysis is necessary to gain more insight about the effects of smoking are on the risk of having a stroke.
+12,4/19/2025,Age Chi-Square Test Analysis,"Age had the highest total chi-square value, with strong contributions from senior and elderly patients, and a notably lower-than-expected stroke rate among young adults.
+
+While no single age group contributed more than 40% of the total statistic, the combined variation across age groups makes age the most robust predictor of stroke risk in the dataset.     ",completed,Include age in final list of top predictors. Highlight variation across multiple age groups to support its role as the most robust predictor of stroke.
+13,4/19/2025,Work Type Chi-Square Test Analysis,"The chi-square test confirms a statistically significant association between work type and stroke occurrence.
+
+While no individual category contributed more than 100 to the test statistic, the largest contribution came from the ""children"" group, which had far fewer strokes than expected.
+
+This likely reflects age-related protection rather than work type itself, suggesting that work type is not a strong standalone predictor of stroke risk in this dataset.",completed,"Note that work type is confounded by age due to the ""children"" category. Use this as supporting evidence for age being a dominant factor, but do not include work type as a standalone predictor."
+14,4/19/2025,Glucose Level Chi-Square Test Analysis,"The chi-square test confirms a statistically significant association between glucose level and stroke occurrence.
+
+Diabetic patients experienced stroke at a rate far higher than expected, contributing 76.44% of the total chi-square value.
+
+This makes diabetes a strong individual predictor of stroke risk in this dataset.",completed,Include diabetes as a strong predictor in final ranking and recommendation. Emphasize the elevated stroke rate in diabetic patients.
+15,4/19/2025,BMI Chi-Square Test Analysis,"This chi-square test confirms a statistically significant association between BMI and stroke occurrence. 
+
+No individual category contributed a dominant share to the result (contribution > 100). 
+
+This suggests that BMI may be a contributing factor, but not a strong standalone predictor of stroke risk in this dataset.",completed,"Acknowledge BMI as a moderate contributor. Optional to include in the final discussion, but not among the top 3–4 strongest predictors."
+16,4/19/2025,Smoking Chi-Square Test Analysis,"This chi-square test confirms a statistically significant association between smoking status and stroke occurrence.
+
+Patients who formerly smoked showed a moderately higher stroke rate than expected, contributing 57.46% (16.75 / 29.15) of the total chi-square value.
+
+This suggests that smoking history may be a contributing factor, but not a strong standalone predictor of stroke risk in this dataset.",completed,Consider including smoking history in extended insights. Note that former smokers show slightly elevated risk but the overall feature has moderate contribution.
+17,4/19/2025,Gender Chi-Square Test Analysis,"This chi-square test shows that gender is not a significant predictor of stroke, as the p-value exceeds the standard significance threshold of 0.05.
+
+The chi-square statistic is 0.42, indicating a very weak association and minimal contribution to stroke occurrence.",completed,Exclude gender from final predictor ranking. No statistically significant association observed.
+18,4/19/2025,Hypertension Chi-Square Test Analysis,"The chi-square test confirms a statistically significant association between hypertension and stroke occurrence.
+
+Patients with hypertension experienced stroke at a notably higher rate than expected, contributing 86% (71.77 / 83.60) of the total chi-square value.
+
+This makes hypertension one of the stronger individual predictors of stroke risk in this dataset, despite its contribution falling below the dominant threshold of 100.",completed,Include hypertension in final top predictors list. Strong association with stroke makes it one of the most relevant risk factors.
+19,4/19/2025,Heart Disease Chi-Square Test Analysis,"The chi-square test confirms a statistically significant association between heart disease and stroke occurrence.
+
+Patients with heart disease experienced stroke at a much higher rate than expected under independence (χ² contribution = 83.70 out of 93.01).
+
+This makes heart disease one of the strongest individual predictors of stroke risk in this dataset.",completed,Include heart disease as a top predictor. Strong contribution confirms it as one of the most statistically significant stroke risk factors.
+,,Residence Type Chi-Square Test Analysis,"The chi-square test confirms a statistically significant association between marital status and stroke occurrence (χ² = 59.98, p < 0.000001).
+
+Married patients experienced more strokes than expected, while never married patients experienced far fewer.
+
+The large chi-square contribution from the never married group reflects a protective effect, not an increased risk. This distinction is important—high contribution doesn't always mean high risk.
+
+These results support earlier findings that being married or ever married is associated with a higher risk of stroke, while never married individuals appear significantly less likely to experience stroke.",completed,Exclude residence type from final analysis. No meaningful difference in stroke risk between urban and rural patients.
+20,4/19/2025,Residence Type Chi-Square Test Analysis,"The chi-square test shows that residence type is not significantly associated with stroke occurrence (χ² = 1.22, p = 0.748).
+
+Stroke rates were nearly identical between urban and rural patients, suggesting that residency type is not a meaningful predictor of stroke risk in this dataset.",completed,Now that the Chi-Square Test is complete. Rank the significant features according to strongest predictors of a patient having a stroke.
+21,4/19/2025,Chi-Square Test Summary Table,"The Chi-Square Test summary highlights the most influential feature categories associated with either an increase or decrease in stroke occurrence.
+
+Categories such as “never married” and “work type – children” were marked as negative contributors, as they significantly decrease the risk of stroke compared to their counterparts.
+
+Together, “never married” and “child work type” account for approximately 60% of the total contribution toward reduced stroke risk in the model.
+
+The contribution table also shows how much each significant feature category contributes to stroke risk. For example, having hypertension accounts for nearly 90% of the stroke risk associated with the hypertension feature, making it one of the most dominant predictors.",completed,Analyze the feature vs stroke data to determine which statistically significant features have the highest risk value for having a stroke.
+22,4/19/2025,Top Stroke Risk Predictors by Feature Category Table,"After sorting the feature category with their respective stroke risk value, the features with the highest risks are elderly (21.51%), have heart disease (17.03%), have hypertension (13.25%), senior (11.85%), and diabetic (10%).
+
+Because elderly and senior are both in the age category, we further narrow down our top risk factors to age, heart disease, hypertension, and glucose level. 
+
+All of these values are significantly higher than our baseline risk factor of 4.87% (249 of the 51110 patients). ",completed,Use the top four features in bivariate vs stroke analysis to show their combined effect when assessing the risk of stroke.
+23,4/20/2025,Age and Heart Disease Risk of Stroke Analysis,"Elderly patients with heart disease are at a 27.27% risk of having a stroke, while elderly patients without heart disease are at a 19.72% risk of having a stroke.
+
+When compared to the individual risk factors, the presence of age and heart disease significantly increased the risk of having a stroke by six to ten percent. 
+
+Except for pediatric and young adult patients, combining age with heart disease leads to a sharp rise in stroke risk.",completed,Proceed to age and hypertension risk of stroke analysis and explore the compounded effect of having both conditions on the risk of a patient having a stroke.
+24,4/20/2025,Age and Hypertension Risk of Stroke Analysis,"Elderly patients with hypertension have a 26.00% stroke risk, compared to 19.85% for elderly patients without hypertension, indicating a significant increase when both risk factors are present.
+
+When compared to the individual risk factors alone, the combination of age and hypertension increases stroke risk by approximately 4% to 13%, depending on the age group.
+
+With the exception of pediatric patients, the presence of hypertension consistently leads to a sharp increase in stroke risk across all age groups, highlighting the compounding effect of age and hypertension.",completed,"Continue on to age and glucose level combination. 
+
+Consider narrowing down the glucose levels to diabetic and non-diabetic for optimal visualization and analysis."
+25,4/20/2025,Binary Glucose Category Column,"To facilitate a more targeted analysis about the effect of diabetes on different age groups, a column that classifies non-diabetic (<125) and diabetic (125+) patients was created.",completed,Proceed to visualizing and analyzing Age  + Glucose Level vs Stroke analysis.
+26,4/20/2025,Age and Glucose Level Risk of Stroke Analysis,"Based on the heatmap visualization of the stroke risk of each age and glucose level combination, senior and elderly patients that have diabetes have the strongest risk of having a stroke.
+
+Narrowing down our glucose level to non-diabetic and diabetic, the bar chart shows that middle aged adults and seniors that have diabetes are about twice as much at risk of having a stroke when compared to the same group that do not have diabetes.
+
+Elderly patients do not show a significant change in their risk of having a stroke when diabetes or no-diabetes is factored in, staying nearly the same as the baseline 21.51% risk of having a stroke as an elderly patient.",completed,Continue on to analyzing heart disease and hypertension compounded effect on patient stroke risk.
+27,4/20/2025,Heart Disease and Hypertension Risk of Stroke Analysis,"Patients with both heart disease and hypertension show a 20.31% risk of stroke, representing a 3% to 7% increase over patients who have only one of these conditions.
+
+Patients with neither heart disease nor hypertension have a stroke risk of 3.39%, which makes them four times less likely to experience a stroke than patients with both conditions.
+
+Additionally, among patients with hypertension, those who do not also have heart disease have a lower stroke risk than the overall hypertensive population, indicating that heart disease compounds the stroke risk introduced by hypertension.",completed,Analyze the interaction between heart disease and glucose level in terms of its effect on stroke occurrence. 
+28,4/20/2025,Heart Disease and Glucose Level Risk of Stroke Analysis,"Based on the heatmap visualization of stroke risk by heart disease status and glucose level, patients with both heart disease and diabetes exhibit the highest observed stroke risk in the dataset — 25.00%.
+
+When glucose levels are simplified to non-diabetic vs diabetic, the chart shows that patients with heart disease and diabetes are more than twice as likely to have a stroke than those with heart disease but not diabetes.
+
+Patients with diabetes but no heart disease have a stroke risk of 8.03%, making them three times less likely to have a stroke than patients with both conditions.
+
+Compared to individual risk factors, patients with both heart disease and diabetes experience a compounded stroke risk that increases by 8% to 15%, highlighting the additive nature of these two features.",completed,Proceed to analyzing the effect of hypertension and glucose level and how this combination affects the patient's risk of stroke. 
+29,4/20/2025,Hypertension and Glucose Level Risk of Stroke Analysis,"This analysis explores the stroke risk among patients with different combinations of hypertension status and glucose level.
+
+Patients with both hypertension and diabetes exhibit a 17.02% stroke risk, which is approximately two times higher than those with diabetes alone (10.00%), and significantly higher than those with hypertension alone (13.25%).
+
+Patients with neither condition show a low stroke risk of 3.03%, confirming the compounding nature of these two risk factors.
+
+Overall, having both hypertension and diabetes increases stroke risk by 4% to 7% compared to having just one of the two conditions.",completed,Create a summary table that compiles the combined effect of each feature pairing in the likelihood that a patient will have a stroke.
+30,4/20/2025,Bivariate Analysis Summary Table,"The following table summarizes the highest observed stroke risks from all bivariate analyses. Each entry represents the stroke risk for patients who exhibit both risk factors listed in the ""Combined Features"" column.
+
+The combination of elderly and heart disease has the highest observed stroke risk at 27.27%, followed by elderly patients with hypertension (26.00%) and patients with both heart disease and diabetes (25.00%).
+
+These results reinforce the importance of compounding risk factors in stroke prediction and provide a strong justification for moving into multivariate analysis.",completed,"Create a multivariate example to demonstrate the potential of higher-order feature combinations. This will serve as a preview of how compounding risk factors can be assessed beyond simple bivariate comparisons.
+
+While a full implementation is outside the scope of this analysis, such multivariate comparisons would be best addressed using machine learning (ML) models or logistic regression to capture interaction effects and non-linear patterns.
+
+Based on the bivariate summary table, consider testing combinations such as:
+
+Elderly + Heart Disease + Hypertension
+
+Elderly + Heart Disease + Diabetes
+
+These combinations represent the highest observed bivariate stroke risks, and are likely to produce some of the strongest compounded effects in a multivariate context."
+31,4/20/2025,Stroke Risk for Elderly Patients by Heart Disease and Hypertension Status,"This visualization compares stroke risk for elderly patients, segmented by heart disease and hypertension status. It highlights how stroke risk increases as more risk factors are present, peaking at 28.57% for elderly patients with both heart disease and hypertension.
+
+While this example explores only 4 of the 20 possible category combinations for age, heart disease, and hypertension, it illustrates how multivariate patterns quickly become complex. A full exploration of 3-feature combinations would be better handled through statistical modeling or machine learning to account for all interactions and subgroup variations.",completed,Select another 3-feature combination to present as a multivariate analysis example.
+32,4/20/2025,Stroke Risk for Elderly Patients by Heart Disease and Diabetes Status,"This 3-feature analysis examined stroke risk among elderly patients, segmented by heart disease and diabetes status.
+
+Patients with both heart disease and diabetes had a stroke risk of 40.00%, the highest observed rate in this project. This is nearly 8× the overall population risk and more than 2× higher than the individual risk associated with either feature alone.
+
+The chart captures only 4 of the 20 possible combinations in this 3-feature space (using diabetic/non-diabetic as a binary glucose category). Expanding to include all glucose levels would increase this to 40 combinations, reinforcing the case for statistical modeling or ML methods for full exploration.",completed,Select and collect significant findings that will be used in the final report and presentation. 
+33,4/20/2025,EDA Phase Completed,"The exploratory data analysis phase is now complete. All relevant features have been analyzed individually, in bivariate combinations, and through selected multivariate examples. The top stroke risk predictors have been identified and prioritized for reporting.
+
+Next Steps:
+
+Gather all materials and finalize the report coverage and flow
+
+Write, check, and proofread the final report
+
+Publish the final report
+
+Update the project README
+
+Download final versions of Sheets and data
+
+Update repositories and ensure all artifacts are version-controlled",completed,Begin final report writing and project publishing phase.
