@@ -61,7 +61,7 @@ This analysis uses the [Stroke Prediction Dataset](https://www.kaggle.com/datase
 
 ## Final Report
 
-- 📎 [View Full Final Report (PDF)](https://github.com/jmedinacs/stroke_risk_analysis/blob/main/docs/Stroke%20Risk%20Analysis%20Final%20Report.pdf)
+- 📎 [View Full Final Report (PDF)](https://jmedinacs.github.io/stroke_risk_analysis/stroke_risk_analysis_final_report.pdf)
 
 ---
 
