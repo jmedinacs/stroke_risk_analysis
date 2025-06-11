@@ -1,14 +1,5 @@
 # Stroke Risk Analysis
 
-## Project Versions
-
-| Version | Tools Used          | Description | Folder |
-|---------|---------------------|-------------|--------|
-| **v1**  | Google Sheets        | Exploratory analysis of stroke risk factors using filtering, pivot tables, and chi-squared tests | Root folders (`/data`, `/cleaning-eda-logs`, etc.) |
-| **v2**  | SQL + Excel          | Structured rework using SQL queries and Excel for insights and dashboards | [`/sql_excel_rework_version`](sql_excel_rework_version/) |
-
----
-
 ## Business Task
 
 The goal of this project is to **identify the leading predictors of stroke** using historical patient data, so that healthcare leaders can **design targeted awareness campaigns**, **improve preventative health screenings**, and ultimately **reduce the burden of stroke on communities**.
