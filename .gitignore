@@ -1,0 +1,6 @@
+# Ignore all database files inside the /data/database folder
+/data/database/*.db
+/data/database/*.sqlite
+/data/database/*.sqlite3
+/data/database/*.db-wal
+/data/database/*.db-shm
