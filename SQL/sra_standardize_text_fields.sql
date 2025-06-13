@@ -16,3 +16,7 @@ SET Residence_type = LOWER(TRIM(Residence_type));
 
 UPDATE stroke_risk
 SET smoking_status = LOWER(TRIM(smoking_status));
+
+-- Standardize Residence_type column name
+ALTER TABLE stroke_risk  
+RENAME COLUMN Residence_type TO residence_type;
